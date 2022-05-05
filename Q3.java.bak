@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-class SLL{
+class LinkedList{
  Node head;
  
  static class Node{
@@ -14,31 +14,29 @@ class SLL{
 	}
  }
  
- /*
+ 
  Node insert(int data){
 	 Node nd = new Node(data);	 
 	if(head == null){
 		 head = nd;
-	 return head;
+	// return head;
 	}
 	Node n = head;
 	while(n.next!=null){
 	 n=n.next;
 	}
 	n.next= nd;
-	return nd;
- 
- }
- */
- 
-Node reverse(int data ){
-	Node nd = new Node(data);	 
-	 nd.next=head;
-	 head=nd;
 	return head;
  }
- 
 
+ 
+ 
+ 
+ /*
+void reverse(){
+	 
+ }
+ */
  void display(){
 	 Node n=head;
 	 while(n !=null){
@@ -50,23 +48,20 @@ Node reverse(int data ){
  
  public static void main(String[] args){
 	 Scanner sc= new Scanner(System.in);
-	
 	 int Testcase=sc.nextInt();
 	 int n=sc.nextInt();
 	 
-	 SLL L = new  SLL();	
-	 /*
+	 LinkedList L = new  LinkedList();	
+	 
+	 
 	 for(int i=0;i<n;i++){
-		int n1=sc.nextInt();
-		L.insert(n1);
+		 L.insert(sc.nextInt());
 	 }
-	 L.display();
-	 */
-	 for(int i=0;i<n;i++){
-		int n1=sc.nextInt();
-		L.reverse(n1);
-		 
-	 }
+	 
+	 
+	 
+	//L.reverse();
+	
 	L.display();
 		 
 	 
